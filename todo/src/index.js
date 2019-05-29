@@ -1,18 +1,36 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-const el = (
-    <div>
-        <h1> My Todo List</h1>
-        <input placeholder="serch"/>
+
+const TodoList = () => {
+    return (
         <ul>
             <li>Drink coffee</li>
             <li>Make Awesome App</li>
         </ul>
-    </div>
-)
+    );
+};
 
+const AppHeader = () => {
+    return (
+        <h1> My Todo List</h1>
+    );
+};
 
+const SearchPanel = () => {
+    return(
+        <input placeholder="serch"/>
+    );
+};
 
+const App = () => {
+    return (
+        <div>
+            <AppHeader />
+            <SearchPanel />
+            <TodoList />
+        </div>
+    );
+};
 
 
 // const el = <h1>Hello World</h1>;
@@ -20,4 +38,4 @@ const el = (
 //     'h1', null, 'Hello World');
 
 
-ReactDOM.render(el, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
