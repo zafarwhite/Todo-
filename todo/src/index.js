@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOMimport { ReactDOM } from 'react-dom';
+import ReactDOM from 'react-dom';
 
 const el = <h1>Hello world</h1>;
 
